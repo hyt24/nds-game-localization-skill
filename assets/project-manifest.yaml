@@ -23,6 +23,12 @@ tools:
   ndspy: ""
   pillow: ""
   emulator: ""
+glossary:
+  path: ""
+  initialized_at: ""
+  last_reviewed_at: ""
+  approved_by: ""
+  translation_ready: false
 resource_families: []
 build_stages: []
 manual_overrides: []

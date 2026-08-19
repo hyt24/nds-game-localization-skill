@@ -24,9 +24,17 @@
 | Family | Total | Discovered | Decoded | Recognized | Translated | Reviewed | Patched | Offline verified | Runtime verified | Blocked |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 
+## Glossary gate
+
+- Glossary path:
+- Total / proposed / reviewed / locked / preserve-original:
+- High-impact terms confirmed by:
+- Last validation command and result:
+- Batch translation authorized: no / yes
+
 ## Completed
 
-## Reviewed terminology
+## Reviewed terminology and unresolved conflicts
 
 ## Manual overrides
 

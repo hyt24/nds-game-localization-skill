@@ -54,7 +54,14 @@ Run `scripts/check_progress.py path/to/resource-inventory.csv` before reporting 
 5. Configure OCR/translation or explicitly select manual mode.
 6. Read [references/reconnaissance.md](references/reconnaissance.md) and map NitroFS, executables, overlays, compression, and resource families.
 7. Classify visible text as ordinary strings, custom glyph streams, raster/tiled art, or runtime/code-embedded text.
-8. Follow only the applicable branch below.
+8. Before any batch or API translation, read [references/glossary-management.md](references/glossary-management.md), copy `assets/glossary.csv`, build the initial glossary from extracted text and game context, obtain human confirmation for high-impact terms, and run `scripts/check_glossary.py path/to/glossary.csv --require-ready`.
+9. Follow only the applicable branch below.
+
+## Glossary gate
+
+Do not start batch translation until the initial glossary passes the glossary check. At minimum, settle character names and forms of address, organizations, places, UI/system labels, chapter names, item/card/record titles, and domain terminology that recurs or affects gameplay.
+
+Treat reviewed and locked glossary entries as the single source of truth across dialogue, menus, images, card titles, subtitles, and progress records. New terms discovered during translation may be added as `proposed`; never silently change a reviewed or locked target. Route conflicts back to human review, then reapply the approved result to every occurrence before packaging.
 
 ## Text branch
 
@@ -63,7 +70,7 @@ Read [references/text-and-glyphs.md](references/text-and-glyphs.md).
 1. Prove the container model with a byte-identical no-op roundtrip.
 2. Export stable IDs, source, context, control metadata, capacity, and previews to review CSV.
 3. Recover glyphs using full-line OCR, contextual voting, and authoritative human overrides.
-4. Freeze names, UI terms, item/card titles, chapter titles, and domain terminology in a glossary.
+4. Extract terminology candidates and complete the glossary gate; do not send the corpus to a translation model before it passes.
 5. Translate semantic units with speaker/scene context; preserve styles, variables, punctuation intent, and interaction labels.
 6. Rebuild glyph slots while preserving unknown controls and stream rhythm.
 7. Use strategies in risk order: static per-file remapping; capacity-aware wording; statically proven bounded expansion; runtime cache/hook only with instrumentation.
