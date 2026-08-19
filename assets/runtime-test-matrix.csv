@@ -1,0 +1,12 @@
+test_id,rom_sha256,emulator,scene,setup,expected,actual,evidence,status,notes
+BOOT,,,,Cold boot,Reaches title menu,,,,
+TITLE_NEW,,,,Select new game,Starts first scene,,,,
+TITLE_CONTINUE,,,,Load save,Correct save and text render,,,,
+FIRST_PAGE,,,,Open first dialogue,All first glyphs and styles render,,,,
+COLORS,,,,Visit styled text,Localized spans use intended colors,,,,
+CHOICE_WRONG,,,,Choose every wrong option,Text appears and returns correctly,,,,
+TOUCH_MODE,,,,Enter and exit touch mode,No skip freeze or branch corruption,,,,
+CARD_UI,,,,Open item/card info,Title and dialogue terminology match,,,,
+CHAPTERS,,,,Visit every chapter title,Fonts colors effects and animation match,,,,
+SAVE_LOAD,,,,Save restart and load,Progress and text remain correct,,,,
+CREDITS,,,,Reach credits,Layout and controls remain intact,,,,

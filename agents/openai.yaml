@@ -1,0 +1,4 @@
+interface:
+  display_name: "NDS 游戏汉化工程"
+  short_description: "逆向、翻译、回写并验证 NDS 游戏文本与图像资源"
+  default_prompt: "Use $nds-game-localization to audit and localize this NDS ROM with reproducible extraction, safe patching, and runtime validation."

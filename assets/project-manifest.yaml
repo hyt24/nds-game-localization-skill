@@ -1,0 +1,21 @@
+project:
+  name: ""
+  platform: "Nintendo DS"
+  source_rom:
+    path: ""
+    sha256: ""
+    provenance_note: "User-supplied, legally obtained ROM; never commit."
+  working_baseline:
+    path: ""
+    sha256: ""
+    purpose: ""
+tools:
+  python: ""
+  ndspy: ""
+  pillow: ""
+  emulator: ""
+resource_families: []
+build_stages: []
+manual_overrides: []
+intentionally_untranslated: []
+known_runtime_risks: []
