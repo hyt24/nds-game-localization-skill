@@ -1,6 +1,6 @@
 # Existing Localization Check
 
-Before reverse engineering or translating, determine whether the exact game already has a localization or an active project. This prevents duplicated work and helps preserve prior community knowledge.
+Before reverse engineering or translating, perform a current internet search to determine whether the exact game already has a localization or an active project. This prevents duplicated work and helps preserve prior community knowledge. Do not replace this search with local file inspection, model memory, or a generic question to the user.
 
 ## Identify the exact release
 
@@ -16,7 +16,9 @@ A patch for another region or revision may not apply even when the title is iden
 
 ## Search responsibly
 
-Search the open web, GitHub/GitLab, ROM-hacking and fan-translation communities, project blogs, video descriptions, patch databases, and relevant language communities. Search combinations of the title with terms such as `translation`, `localization`, `English patch`, `Chinese patch`, `汉化`, `汉化版`, `补丁`, `NDS`, game code, and target language.
+Use live web browsing. Search the open web, GitHub/GitLab, ROM-hacking and fan-translation communities, project blogs, video descriptions, patch databases, and relevant language communities. Search combinations of the Japanese title, romanized title, localized/alternative titles, series name, game code, and terms such as `translation`, `localization`, `English patch`, `Chinese patch`, `汉化`, `汉化版`, `补丁`, `NDS`, and the target language. Repeat searches in Japanese, English, Chinese, and the requested target language when practical.
+
+Record the search date, exact queries, result links, publication/update dates, and whether each source is primary or a repost. Prefer project repositories and author announcements over download aggregators. Check more than one search engine/source category before concluding that nothing was found.
 
 Look for:
 
@@ -30,7 +32,7 @@ Do not download or redistribute ROMs. Prefer project pages, source repositories,
 
 ## Ask before proceeding
 
-If anything relevant is found, summarize it with links, date/status, language, supported revision, license or permission status, and known completeness. Then ask the user to choose:
+If anything relevant is found online, summarize it with links, publication/update date, project activity, language, supported revision/hash, license or permission status, known completeness, and reported defects. Then stop and ask the user to choose:
 
 1. use the existing localization as-is;
 2. audit or improve it;
@@ -38,7 +40,7 @@ If anything relevant is found, summarize it with links, date/status, language, s
 4. create a clean-room localization from the legally obtained source ROM;
 5. stop because the existing work already satisfies the goal.
 
-Do not begin extraction, translation, or code reuse until this decision is explicit. If no existing localization is found, say that the search is not proof of absence and continue with the source-ROM audit only after user confirmation.
+Do not begin extraction, translation, or code reuse until this decision is explicit. If no existing localization is found, report where and when the Agent searched, state that search results are not proof of absence, and continue with the source-ROM audit only after user confirmation.
 
 ## Record provenance
 

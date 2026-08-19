@@ -47,7 +47,7 @@ Run `scripts/check_progress.py path/to/resource-inventory.csv` before reporting 
 
 ## Start here
 
-1. Read [references/existing-localization-check.md](references/existing-localization-check.md). Identify the exact game title, region, revision, and game code, then search for existing translations, patches, active projects, and abandoned partial work.
+1. Read [references/existing-localization-check.md](references/existing-localization-check.md). Identify the exact game title, region, revision, and game code, then **browse the current public internet** for existing translations, patches, active projects, and abandoned partial work. A local repository search or asking the user from memory is not sufficient.
 2. If any existing localization is found, stop before extraction or translation and ask the user whether to use it, audit/improve it, continue it with permission, or start over. Record the decision and provenance. Do not assume a complete-looking patch is authorized, accurate, compatible, or reusable.
 3. Copy `assets/project-manifest.yaml` into the project and fill it in.
 4. Run `scripts/inspect_nds.py game.nds --out audit/source`.

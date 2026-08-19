@@ -12,6 +12,8 @@ project:
 existing_localization_check:
   searched_at: ""
   exact_release: ""
+  live_web_search_completed: false
+  search_queries: []
   queries_and_sources: []
   findings: []
   user_decision: ""
