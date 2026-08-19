@@ -9,6 +9,13 @@ project:
     path: ""
     sha256: ""
     purpose: ""
+existing_localization_check:
+  searched_at: ""
+  exact_release: ""
+  queries_and_sources: []
+  findings: []
+  user_decision: ""
+  reuse_permission_or_license: ""
 tools:
   python: ""
   ndspy: ""

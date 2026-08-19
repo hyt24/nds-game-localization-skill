@@ -47,12 +47,14 @@ Run `scripts/check_progress.py path/to/resource-inventory.csv` before reporting 
 
 ## Start here
 
-1. Copy `assets/project-manifest.yaml` into the project and fill it in.
-2. Run `scripts/inspect_nds.py game.nds --out audit/source`.
-3. Configure OCR/translation or explicitly select manual mode.
-4. Read [references/reconnaissance.md](references/reconnaissance.md) and map NitroFS, executables, overlays, compression, and resource families.
-5. Classify visible text as ordinary strings, custom glyph streams, raster/tiled art, or runtime/code-embedded text.
-6. Follow only the applicable branch below.
+1. Read [references/existing-localization-check.md](references/existing-localization-check.md). Identify the exact game title, region, revision, and game code, then search for existing translations, patches, active projects, and abandoned partial work.
+2. If any existing localization is found, stop before extraction or translation and ask the user whether to use it, audit/improve it, continue it with permission, or start over. Record the decision and provenance. Do not assume a complete-looking patch is authorized, accurate, compatible, or reusable.
+3. Copy `assets/project-manifest.yaml` into the project and fill it in.
+4. Run `scripts/inspect_nds.py game.nds --out audit/source`.
+5. Configure OCR/translation or explicitly select manual mode.
+6. Read [references/reconnaissance.md](references/reconnaissance.md) and map NitroFS, executables, overlays, compression, and resource families.
+7. Classify visible text as ordinary strings, custom glyph streams, raster/tiled art, or runtime/code-embedded text.
+8. Follow only the applicable branch below.
 
 ## Text branch
 

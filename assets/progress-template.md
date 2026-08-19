@@ -2,6 +2,14 @@
 
 > Update after every material discovery, review batch, patch, build, runtime result, or terminology decision. Counts must use the resource inventory as denominator.
 
+## Existing localization check
+
+- Exact game release / game code:
+- Search date and sources:
+- Existing patches or projects found:
+- License / permission status:
+- User decision: use / audit-improve / continue with permission / clean-room restart / stop
+
 ## Current candidate
 
 - ROM:
